@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Code Quiz</title>
+  </head>
+  <body>
+
+    <header>
+      <a href="highscores.html">View High Scores</a>
+      <h1>Time: <span id="timeLeft">60</span></h1>
+    </header>
+    <main class="wrapper">
+
+      <h3>Code Quiz</h3>
+      <section class="begin">
+        <p>
+          Try to answer the following code-related questions within the time
+          limit. Keep in mind that incorrect answers will penalize your
+          score/time by ten seconds!
+        </p>
+        <button id="startQuiz">Start Quiz</button>
+      </section>
+
+      <section id="questionContainer" class="hide">
+        <h3 id="question"></h3>
+        <div id="answerList">
+            <button class="answer" id="C1"></button>
+            <button class="answer" id="C2"></button>
+            <button class="answer" id="C3"></button>
+            <button class="answer" id="C4"></button>
+        </div>
+      </section>
+
+      <section id="endQuiz" class="hide">
+        <h3>Game Is Over</h3>
+        <p id="displayScore">Your final score is <span id="score"></span>.</p>
+        <form>
+          <label for="initials">Enter initials:</label>
+          <input type="text" id="initials" name="initials" />
+          <button id="submitScore">Submit</button>
+        </form>
+      </section>
+    </main>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
