@@ -41,23 +41,33 @@ header h1 {
 }
 
 .wrapper {
-    max-width: 800px;
-    height: 80%;
+    width: 900px;
+    height: 60%;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin-top: 30px;
+    padding: 0 20px;
+    border: #0a0a9e 2px solid;
 }
 
+h2 {
+    font-size: 35px;
+}
 h3 {
     font-size: 30px;
     font-weight: 500;
-    margin-bottom: 20px;
 }
 
-#startQuiz, #submitScore, #goBack {
+hr {
+    width: 100%;
+    margin: 20px 0;
+    border: #0a0a9e 1px solid;
+}
+
+.button {
     font-size:20px;
     background-color: #110df0;
     color: white;
@@ -66,7 +76,7 @@ h3 {
     margin-top: 20px;
 }
 
-#startQuiz:hover {
+.button:hover {
     background-color: #0a0a9e;
     color: white;
     border-radius: 10px;
@@ -78,18 +88,16 @@ h3 {
     display: none;
 }
 
-.show {
-    max-width: 800px;
-    height: 80%;
-    text-align: center;
+
+#choices {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
-#answerlist {
+.column {
     display: flex;
     flex-direction: column;
     align-items: center;
