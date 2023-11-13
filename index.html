@@ -9,41 +9,41 @@
   <body>
 
     <header>
-      <a href="highscores.html">View High Scores</a>
-      <h1>Time: <span id="timeLeft">60</span></h1>
+      <a id="viewScores" href="./assets/highscores.html">View High Scores</a>
+      <h1>Time: <span id="timeLeft">30</span></h1>
     </header>
     <main class="wrapper">
 
-      <h3>Code Quiz</h3>
-      <section class="begin">
+      <h2>Code Quiz</h2>
+      <hr>
+      <section id="start-screen">
         <p>
           Try to answer the following code-related questions within the time
           limit. Keep in mind that incorrect answers will penalize your
-          score/time by ten seconds!
+          score/time by ten seconds! Your score will be based on your time remaining.
         </p>
-        <button id="startQuiz">Start Quiz</button>
+        <button id="startQuiz" class="button">Start Quiz</button>
       </section>
 
-      <section id="questionContainer" class="hide">
+      <section id="question-screen" class="hide">
         <h3 id="question"></h3>
-        <div id="answerList">
-            <button class="answer" id="C1"></button>
-            <button class="answer" id="C2"></button>
-            <button class="answer" id="C3"></button>
-            <button class="answer" id="C4"></button>
+        <hr>
+        <div id="choices">
         </div>
+        <hr>
+        <h3 id="rightWrong"></h3>
       </section>
 
-      <section id="endQuiz" class="hide">
-        <h3>Game Is Over</h3>
-        <p id="displayScore">Your final score is <span id="score"></span>.</p>
-        <form>
-          <label for="initials">Enter initials:</label>
+      <section id="end-screen" class="hide">
+        <h3>Quiz Over!</h3>
+        <p>Your final score is <span id="score"></span>.</p>
+        <form class="column">
+          <label for="initials">Enter your initials:</label>
           <input type="text" id="initials" name="initials" />
-          <button id="submitScore">Submit</button>
+          <button id="submitScore" class="button">Submit</button>
         </form>
       </section>
     </main>
-    <script src="./assets/script.js"></script>
+    <script src="./assets/js/index.js"></script>
   </body>
 </html>
